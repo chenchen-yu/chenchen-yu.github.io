@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Bootstrap Visualization Dashboard</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<style>
+   @media (max-width: 550px) {
+     #image_fig {
+       width: 320px;
+       height: 250px;
+       margin-right: 20px;
+     }
+
+     .topnav {
+       display:none
+     }
+
+     #h1{
+       padding: 15px;
+       background: #1ABC9C;
+       color:#FFFFFF;
+       font-size: 28px;
+     }
+
+     .h2{
+       position:relative;
+       bottom: 0;
+       padding: 5px;
+       background:#FFFFFF;
+       color: black;
+       font-size: 17px;
+     }
+
+     .h2 a {
+       color: black;
+       padding: 10px 16px;
+       font-size: 17px;
+     }
+
+     .h2 a:hover {
+       background-color: #ddd;
+       color: black;
+     }
+
+     .nav-select {
+       display:block
+     }
+   }
+</style>
+</head>
+
+<body>
+
+<div class="topnav">
+  <a class="active" href="landing page.html">Lattitude</a>
+  <a href="data.html">Data</a>
+  <a href="comparisons.html">Comparison</a>
+
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+     aria-haspopup="true" aria-expanded="false"> Plots <span class="caret"></span> </a>
+  <ul class="dropdown-menu" aria-labelledby="drop4" aria-labelledby="dropdownMenu3">
+    <li><a class="dropdown-item" href="visualization page_Fig1.html">Max Temperature</a></li>
+    <li><a class="dropdown-item" href="visualization page_Fig2.html">Humidity</a></li>
+    <li><a class="dropdown-item" href="visualization page_Fig3.html">Cloudiness</a></li>
+    <li><a class="dropdown-item" href="visualization page_Fig4.html">Wind Speed</a></li>
+  </ul>
+</div>
+
+<div class="nav-select">
+  <h1 id="h1">Lattitude</h1>
+  <div class="h2">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+       aria-haspopup="true" aria-expanded="false"> Plots <span class="caret"></span> </a>
+       <ul class="dropdown-menu" aria-labelledby="drop4" aria-labelledby="dropdownMenu3">
+         <li><a class="dropdown-item" href="visualization page_Fig1.html">Max Temperature</a></li>
+         <li><a class="dropdown-item" href="visualization page_Fig2.html">Humidity</a></li>
+         <li><a class="dropdown-item" href="visualization page_Fig3.html">Cloudiness</a></li>
+         <li><a class="dropdown-item" href="visualization page_Fig4.html">Wind Speed</a></li>
+       </ul>
+    <h4><a href="comparisons.html">Comparison</a></h4>
+    <h4><a href="data.html">Data</a></h4>
+  </div>
+</div>
+
+<div class="container">
+
+  <header class="header">
+  </header>
+
+  <div class="row">
+    <!--First Column in this Row-->
+    <div class="col-md-8">
+      <div class="box_fig">
+        <strong><h1>Max Temperature</h1></strong>
+        <hr>
+        <section id="figure">
+          <center>
+          <img id="image_fig" src="../Resources/assets/images/Fig1.png" alt="Fig1">
+        </section>
+        <p id="font_size">As expected, the weather becomes significantly warmer as one approaches the equator (0 Deg. Latitude).
+        More interestingly, however, is the fact that the southern hemisphere tends to be warmer this time of year than
+      the northern hemisphere. This may be due to the tilt of the earth at the time of the year this data was gathered.</p>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="box2">
+        <h2>Visualizations</h2>
+        <hr>
+        <section id="figure">
+          <a href="visualization page_Fig1.html"><img id="image" src="../Resources/assets/images/Fig1.png" alt="Fig1" style="border:2px solid #1ABC9C"></a>
+          <a href="visualization page_Fig2.html"><img id="image" src="../Resources/assets/images/Fig2.png" alt="Fig2"></a>
+          <a href="visualization page_Fig3.html"><img id="image" src="../Resources/assets/images/Fig3.png" alt="Fig3"></a>
+          <a href="visualization page_Fig4.html"><img id="image" src="../Resources/assets/images/Fig4.png" alt="Fig4"></a>
+        </section>
+      </div>
+    </div>
+  </div>
+</div>
+
+<header class="header">
+</header>
+
+<div class="footer">
+  <center><p class="copyright">&copy; Copyright Coding Bootcamp 2017</p></center>
+</div>
+
+</body>
+</html>
